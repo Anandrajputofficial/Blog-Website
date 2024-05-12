@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Blog Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="blog-stats">
+            <h2 class="head">YOUR BLOG</h2>
+            <p id="blogCount2">Total Blog Posts: <span id="blogCount">0</span></p>
+        </div>
+        <h1>Simple Blog Website</h1>
+        <div class="blog-form">
+            <input type="text" id="imageURL" placeholder="Image URL">
+            <input type="text" id="title" placeholder="Title">
+            <textarea id="description" placeholder="Blog Description"></textarea>
+            <button onclick="postBlog()">Post</button>
+        </div>
+        
+        <div class="blog-list" id="blogList">
+            <!-- Blog posts will be dynamically added here -->
+        </div>
+    </div>
+    
+    <script src="counter.js"></script>
+</body>
+</html>
